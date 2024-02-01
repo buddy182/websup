@@ -1,0 +1,607 @@
+body {
+  font-family: "Source Sans Pro", "Hiragino Kaku Gothic ProN", Meiryo, Arial,
+      sans-serif;
+}
+
+
+
+
+
+/*================
+ PC用のスタイル
+=================*/
+@media screen and (min-width: 768px) {
+
+
+/* ヘッダー */
+header {
+  position: absolute;
+  width: 100%;
+  padding: 30px 7vw;
+  box-sizing: border-box;
+}
+
+.header__inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.header__title {
+  font-size: 30px;
+  color: white;
+  text-decoration: none;
+}
+.header__nav ul {
+  display: flex;
+}
+.header__nav ul li {
+  padding-right: 4em;
+  list-style: none;
+  font-size: 20px;
+}
+.header__nav ul li a {
+  text-decoration: none;
+  color: white;
+}
+
+
+
+/* メインビューセクション */
+/*　背景の青い画像 */
+#main-view {
+    background-color: #1d4a90;
+    height: 100vh;
+    position: relative;
+    z-index: -2;
+}
+
+/* divの並び方 */
+.main-viewcontent {
+  display: flex;
+  justify-content: space-around;
+  position: absolute;
+  height: 100vh;
+}
+
+/* 中小企業のweb集客効率UP */
+.catch-1index {
+  width: 65%;
+  padding: 10px 40px;
+  margin: 20px;
+  top:20%;
+  left: 6%;
+  position: absolute;
+  text-align: center;
+  font-weight: bold;
+}
+
+.catch-1index::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: white;
+  z-index: -1;
+}
+.catch-1index::after {
+  content: '';
+  position: absolute;
+  height: 100%;
+  top: 0;
+  right: 20px;
+  transform: skew(20deg);
+}
+
+.catch-1 {
+  font-size: 2.9em;
+  letter-spacing: 0.18em;
+}
+
+
+/* WEBSUP */
+.catch-2index {
+  width: 40%;
+  height: 5%;
+  margin: 20px;
+  padding: 20px 40px;
+  position: absolute;
+  top: 40%;
+  left: 10%
+}
+
+.catch-2index::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: white;
+  transform: skew(20deg);
+  z-index: -1;
+}
+.catch-2index::after {
+  content: '';
+  position: absolute;
+  border-left: 20px double #1d4a90;
+  height: 100%;
+  top: 0;
+  right: 20px;
+  transform: skew(20deg);
+}
+
+.catch-2 {
+  font-size: 3.2em;
+  letter-spacing: 0.18em;
+  position: absolute;
+  top: 5%;
+  left: 15%;
+  font-weight: bold;
+}
+
+/* パソコン画像 */
+.pc-img {
+  width: auto;
+  height: 80%;
+  margin-left: 80%;
+  margin-top: 15%;
+  margin-right: 5%;
+}
+
+
+
+
+
+
+
+
+
+/* メインビュー下相談予約セクション */
+/* ピンク背景画像 */
+#main-form {
+  position: relative;
+  margin-top: 100px;
+  background-image: url(images/formbanner.png);
+  background-repeat:no-repeat; 
+  background-size: 70%;
+  background-position: center;
+}
+
+/* バナー中身 */
+/* バナー全部のdiv並び方 */
+.form-banner {
+  display: flex;
+  justify-content: center;
+  height: 300px;
+  
+}
+
+/* バナー左側 文字 */
+.form-left {
+  width: 30%;
+  font-size: 30px;
+  text-align: center;
+  letter-spacing: 0.3em;
+  position: absolute;
+  left: 23%;
+  top: 10%;
+}
+
+/* バナーボタン */
+a.form-button {
+	text-align: center;
+	vertical-align: middle;
+	text-decoration: none;
+  position: relative;
+  padding: 1rem;
+	font-weight: bold;
+	border-radius: 1rem;
+	border: 3px solid white;
+	box-shadow: 5px 5px #acabab;
+	transition: 0.5s ease-in-out;
+  background-color: white;
+  font-size: 0.8em;
+  color: rgb(25, 25, 25);
+}
+
+a.form-button:hover {
+	box-shadow: none;
+	transform: translate(5px, 5px);
+	color: rgb(25, 25, 25);
+}
+
+/* バナー右側　画像 */
+.form-people {
+  width: auto;
+  height: 300px;
+  padding-bottom: 10%;
+  position: absolute;
+  left: 55%;
+}
+
+
+
+
+/*　共通 */
+/*　インデックス */
+.index-h1 {
+  margin: 0;
+  position:  relative; 
+  font-weight:  normal;
+  margin-top: 4em; 
+  margin-bottom: 3em; 
+  text-align: center;
+  /* padding-top: 2.5%;                        
+  padding-left: 2%; */
+  padding-top: 2.5em;                        
+  padding-left: 2em;
+
+}
+h1 {
+  font-size: 5em;
+}
+
+.index-h1:before {
+  content:  '';                   
+  width: 0;                       
+  height: 0;                      
+  border-style: solid;            
+  /* border-width: 0 0 180px 190px; */ 
+  border-width: 0 0 8em 8.5em;
+  border-color: transparent transparent #a3d0e4 transparent;  
+  position:  absolute;           
+  z-index:  -1;                   
+  transform: rotate(30deg); 
+  top: -80%;                           
+  left: 45%;                  
+}
+
+
+
+
+
+
+
+/* 事例内容 */
+/* 事例横並びにする */
+#achievement {
+  display: flex;
+  justify-content: center;
+}
+
+/* 事例1背景 */
+#achievement1 { 
+  border: solid black 1px;
+  background-image: url(images/achievement1.png);
+  background-repeat:no-repeat; 
+  background-size: 100%;
+  background-position: center;
+  margin: 0 5px;
+  width: 70%;
+  height: 600px;
+  z-index: 100;
+}
+
+.achievement-title {
+  text-align: center;
+}
+
+.box-1 {
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+/*　右側文字 */
+/* 上側 */
+.achievement-right {
+  border: 1px solid #1d4a90;
+  height: 15%;
+}
+
+.achievement-right p {
+  text-align: center;
+  padding: 15px 5px;
+}
+
+.achievement-right span {
+  background: #1d4a90;
+  padding: 3px 10px;
+  color: #fff;
+  position: absolute;
+  top: -5%;
+  left: 0;
+
+  }
+
+/* 下側 */
+.achievement-bottom {
+  border: 1px solid #1d4a90;
+  height: 20%;
+}
+
+.achievement-bottom p {
+  text-align: left;
+  padding: 15px 5px;
+}
+
+.achievement-bottom span {
+  background: #1d4a90;
+  padding: 3px 10px;
+  color: #fff;
+  position: absolute;
+  top: -5%;
+  left: 17%;
+  }
+
+/* 左側グラフ */
+.achievement-left {
+  position: absolute;
+  left: 40%;
+}
+
+/* 下側チャート */
+#chart {
+  width: 35%;
+  height: auto;
+}
+
+
+
+
+
+
+
+/* 事例2 */
+#achievement2 { 
+  position: relative;
+  border: solid black 1px;
+  background-image: url(images/achievement2.png);
+  background-repeat:no-repeat; 
+  background-size: 100%;
+  background-position: center;
+  margin: 0 5px;
+  width: 70%;
+  height: 600px;
+  z-index: 100;
+}
+
+
+
+
+
+
+/*　お困りごとありませんか？ */
+/* 背景 */
+#problems {
+  margin: 10% auto;
+  border: solid black 1px;
+  background-image: url(images/problems.png);
+  height: 800px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  position: relative;
+  text-align: center;
+}
+
+/*　こんなお悩みありませんか？ */
+.problem-word {
+  font-size: 3em;
+  letter-spacing: 0.7em;
+  width: 100%;
+  position: absolute;
+
+}
+/*　３つの箱 */
+.problem-box ul {
+  list-style-type: disc;
+  position: relative;
+  padding: 5.5rem 3rem 1rem;
+  border: 1px solid #333;
+  background-color: #eeded5;
+  text-align: center;
+}
+/* 丸ボタン数字 */
+.problem-box ul::before {
+  position: absolute;
+  top: -2rem;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 1.7rem;
+  border-radius: 50%;
+  width: 2em;
+  height: 2em;
+  background-color: #1d4a90;
+  font-weight: bold;
+  color: white;
+  content: attr(data-title);
+  margin: 0 auto;
+  text-align: center;
+  line-height: 1.5em;
+}
+.problem-box {
+  display: flex;
+  gap: 5rem;
+  justify-content: center;
+  position: absolute;
+  width: 100%;
+  top: 25%;
+
+}
+.problem-box li {
+  font-size: 2em;
+  list-style: none;
+}
+
+/* 箱の内容 */
+.problem-content {
+  border: solid black 1px;
+  margin: 10px;
+  width: 350px;
+  height: 350px;
+  padding: 30px;
+  border-radius: 10px;
+}
+
+/* お困りごとイラスト */
+ .problem-content img {
+  width: 90%;
+  height: auto;
+  margin-top: 10%;
+  position: absolute;
+  top: 40%;
+  left: 5%;
+}
+
+
+
+
+/* 【サービス】 */
+/*　内容 */
+#service {
+  height: 800px;
+  width: 100%;
+  margin: 0 auto;
+  background-color: #1d4a90;
+  position: relative;
+}
+.service-image {
+  width: 50%;
+  position: absolute;
+    top: 8%;
+    left: 10%;
+ 
+}
+
+#service-box {
+  position: absolute;
+  height: 35%;
+  width: 30%;
+  right: 150px;
+  top: 430px;
+  background-color: #dde5f3;
+  text-align: center;
+  padding: 1em 1em;
+  font-size: 20px;
+}
+
+.service-title {
+  text-align: center;
+  font-size: 1.5em;
+  border: solid #1d4a90 1px;
+}
+
+.service-content {
+  text-align: center;
+}
+
+.button-more {
+  color: #fff;
+  background-color: #eb6100;
+  padding: 0.8em 0.8em;
+  font-size: 0.8em;
+  text-decoration: none;
+  display: inline-block;
+  border-radius: 10px;
+}
+
+.button-more:hover,
+a.button-more:hover {
+  color: #fff;
+  background: #bc5002;
+}
+
+
+/* 【コンセプト】 */
+#concept-content { 
+  background-color: #1d4a90;
+  height: 230px;
+  width: 60%;
+  margin: 0 auto;
+  -webkit-box-shadow: 0 3px 5px rgba(0, 0, 0, .5);
+  box-shadow: 0 3px 5px rgba(0, 0, 0, .5);
+  border-radius: 20px;
+  display: table;
+
+}
+#concept-content p {
+  color: white;
+  text-align: center;
+  vertical-align: middle;
+  font-size: 2rem;
+
+}
+
+
+
+/* 【お知らせ】 */
+#information-content { 
+  background-color: lightblue;
+  height: 400px;
+  width: 70%;
+  margin: 50px auto;
+
+}
+.concept-word {
+  font-size: 1.5em;
+}
+
+
+/* フッター */
+#footer-link{
+ color: #808080;
+ background: #e5e5e5;
+ padding: 30px;
+ text-align: center;
+}
+#logo {
+  font-size: 1.5em;
+}
+#footer-link a {
+ color: #808080;
+ text-decoration: none;
+}
+#footer-link a:hover {
+ text-decoration: underline;
+}
+#footer-link .footer-menu {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+ }
+ #footer-link .footer-menu li {
+  margin: 0;
+  padding: 0 20px;
+  border-left: 1px #808080 solid;
+ }
+ #footer-link .footer-menu li:first-child {
+  padding-left: 0;
+  border: none;
+ }
+ #copyright {
+  margin: 0;
+  padding: 20px 0 0 0;
+ }
+ 
+ @media only screen and (max-width: 599px) {
+ .footer-link .footer-menu li {
+  width: 50%;
+  padding: 0 20px 0 0;
+  box-sizing: border-box;
+  border: none;
+ }
+ }
+
+
+
+/* 共通　インデックス */
+.index-h1 {
+  font-size: 30px
+}
+
+}
